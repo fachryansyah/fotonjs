@@ -1,0 +1,12 @@
+{
+  "name": "expressjs-mvc",
+  "version": "1.0.0",
+  "description": "MVC Boilerplate for expressjs",
+  "main": "server.js",
+  "author": "fahriansyah",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1"
+  }
+}
