@@ -12,6 +12,7 @@ $ npm install
 - [x] Env configuration
 - [x] Database Connection
 - [x] ORM integration
-- [ ] Middleware
+- [x] Middleware
+- [ ] Validation Request
 - [ ] Add Socket connection
 - [ ] BREAD Sample
