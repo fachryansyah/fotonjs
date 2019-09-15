@@ -3,7 +3,7 @@ This is boilerplate for building Rest api expressjs
 
 ## Usage
 ``` bash
-$ git clone https://github.com/fachryansyah/expressjs-mvc.git
+$ git clone https://github.com/fachryansyah/nodejs-api.git
 $ npm install
 ```
 
