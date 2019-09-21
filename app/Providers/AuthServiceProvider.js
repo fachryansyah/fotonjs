@@ -11,6 +11,9 @@ const AuthServiceProvider = {
 
         return user
     },
+    attempt: async function (credential) {
+        return credential
+    },
     logout: async function (req) {
         const apiKey = req.headers.authorization.split(" ")[1]
 

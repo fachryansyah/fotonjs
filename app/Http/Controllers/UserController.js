@@ -1,5 +1,5 @@
 const Auth = require("../../Providers/AuthServiceProvider")
-let UserModel = require("../../Model/UserModel")
+let UserModel = require("../../Models/UserModel")
 
 const UserController = {
     getUsers: async function(req, res) {
