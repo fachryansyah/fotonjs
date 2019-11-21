@@ -1,4 +1,4 @@
-const Auth = require("../../Providers/AuthServiceProvider")
+const Auth = require("../../Providers/Auth")
 let UserModel = require("../../Models/UserModel")
 
 const UserController = {
