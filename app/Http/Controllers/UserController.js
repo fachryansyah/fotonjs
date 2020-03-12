@@ -1,5 +1,6 @@
 const Auth = require("../../Providers/Auth")
 let UserModel = require("../../Models/UserModel")
+const Response = require("../Utils/HttpResponse")
 
 const UserController = {
     getUsers: async function(req, res) {
@@ -9,11 +10,7 @@ const UserController = {
         // Retrieving The Authenticated User with AuthServiceProvider
         const authenticatedUser = Auth.user(req) // the output should return user data
 
-        res.json({
-            "message" : "OKE!",
-            "status" : 200,
-            "data" : users
-        })
+        return Response.success(res, users)
     }
 }
 
