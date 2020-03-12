@@ -1,5 +1,5 @@
 # NodeJS Api
-This is boilerplate for building Rest api expressjs
+This is boilerplate for building Rest api with framework expressjs
 
 ## Usage
 ``` bash
