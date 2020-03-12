@@ -1,11 +1,14 @@
-let express = require("express")
-let app = express()
+const express = require("express")
+const app = express()
 
-let AuthController = require("./../app/Http/Controllers/AuthController")
-let UserController = require("./../app/Http/Controllers/UserController")
+const AuthController = require("./../app/Http/Controllers/AuthController")
+const UserController = require("./../app/Http/Controllers/UserController")
+
+const LoginRules = require("../app/Http/Rules/Auth/LoginRules")
+const Validator = require("../app/Http/Middleware/Validator")
 
 app.get("/auth", AuthController.index)
-app.post("/auth/login", AuthController.login)
+app.post("/auth/login", [LoginRules, Validator], AuthController.login)
 
 app.get("/get/user", UserController.getUsers)
 
