@@ -37,8 +37,9 @@ const UserController = {
 - [x] ORM integration
 - [x] Middleware
 - [x] Auth Service Provider
-- [ ] Auto Migrate Database
-- [ ] Database seeder
+- [x] Auto Migrate Database
+- [x] Database seeder
+- [x] Unit Testing
 - [ ] Code generator Like artisan laravel
 - [ ] Add Socket connection
 - [ ] BREAD Sample
