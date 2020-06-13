@@ -1,10 +1,14 @@
-# NodeJS Api
-This is boilerplate for building Rest api with framework expressjs
+# FotonJS
+The simple framework for building nodejs rest api with expressjs
 
-## Usage
+## Installation
+#### install foton-cli
 ``` bash
-$ git clone https://github.com/fachryansyah/nodejs-api.git
-$ npm install
+$ npm i -g foton-cli
+```
+#### creating project
+``` bash
+$ foton create --project <project-name>
 ```
 
 ## Manual
@@ -40,7 +44,7 @@ const UserController = {
 - [x] Auto Migrate Database
 - [x] Database seeder
 - [x] Unit Testing
-- [ ] Code generator Like artisan laravel
+- [x] Code generator Like artisan laravel
 - [ ] Add Socket connection
 - [ ] BREAD Sample
 - [ ] End to end encryption connection
