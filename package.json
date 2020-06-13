@@ -5,6 +5,10 @@
   "main": "server.js",
   "author": "fahriansyah",
   "license": "MIT",
+  "scripts": {
+    "dev": "node server.js",
+    "prod": "pm2 start server.js"
+  },
   "dependencies": {
     "cloudinary": "^1.21.0",
     "crypto": "^1.0.1",
