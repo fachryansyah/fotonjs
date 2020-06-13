@@ -10,6 +10,7 @@
     "prod": "pm2 start server.js"
   },
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "cloudinary": "^1.21.0",
     "crypto": "^1.0.1",
     "datauri": "^2.0.0",
