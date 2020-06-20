@@ -11,6 +11,7 @@
     "test": "mocha"
   },
   "dependencies": {
+    "app-root-path": "^3.0.0",
     "bcrypt": "^5.0.0",
     "cloudinary": "^1.21.0",
     "crypto": "^1.0.1",
@@ -24,7 +25,8 @@
     "mysql": "^2.18.1",
     "objection": "^1.6.11",
     "randomstring": "^1.1.5",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "mocha": "^7.1.2"
