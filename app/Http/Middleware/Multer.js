@@ -1,12 +1,13 @@
-const multer = require('multer')
-const Datauri = require('datauri')
-const path = require('path')
+const multer = require('multer');
+const Datauri = require('datauri');
+const path = require('path');
 
-const storage = multer.memoryStorage()
+const storage = multer.memoryStorage();
 
-const multerUploads = multer({ storage }).single('image')
+const multerUploads = multer({ storage }).single('image');
+const localUpload = multer({dest: `${rootPath}/public`});
 
-const dUri = new Datauri()
+const dUri = new Datauri();
 
 /**
 * @description This function converts the buffer to data url
@@ -17,4 +18,4 @@ const dUri = new Datauri()
 const dataUri = req => dUri.format(path.extname(req.file.originalname).toString(), req.file.buffer);
 
 
-module.exports = {multerUploads, dataUri}
+module.exports = {multerUploads, localUpload, dataUri};
