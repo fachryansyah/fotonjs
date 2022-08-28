@@ -1,6 +1,8 @@
-require("dotenv").config();
+import Knex from "knex";
+import Dotenv from "dotenv";
+Dotenv.config();
 
-let knex = require("knex")({
+let connection = Knex({
     client: process.env.DB_DRIVER,
     connection: {
         host: process.env.DB_HOST,
@@ -11,4 +13,4 @@ let knex = require("knex")({
     pool: { min: 0, max: 3 },
 });
 
-export default knex;
+export default connection;

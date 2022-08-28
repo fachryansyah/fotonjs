@@ -1,6 +1,6 @@
-import Express from "express";
+import express, { Express } from "express";
 import SampleRoute from "./Api/SampleRoute";
-const app = Express();
+const app: Express = express();
 
 app.use("/sample", SampleRoute);
 
